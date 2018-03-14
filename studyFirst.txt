@@ -1,6 +1,8 @@
 学习git的第一个文件
 $ git add file1.txt
-$ git add file2.txt 我在此处练习修改 。。。。file3.txt
+$ git add file2.txt
 $ git commit -m "add 3 files."
 git　status查看git 状态  哪个分支上怎么了等等 
 此处尝试  git diff 看下那个文件坐了什么修改
+git log  查看所有提交的东西
+如果嫌输出信息太多，看得眼花缭乱的，可以试试加上--pretty=oneline参数：
