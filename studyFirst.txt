@@ -2,3 +2,5 @@
 $ git add file1.txt
 $ git add file2.txt file3.txt
 $ git commit -m "add 3 files."
+git　status查看git 状态  哪个分支上怎么了等等 
+此处尝试  git diff 看下那个文件坐了什么修改
