@@ -15,3 +15,4 @@ git reset --hard  id
 git diff HEAD -- studyFirst.txt 
 用于查看当前版本库和工作区的不同
 cat 文件.txt
+此处用于对比版本ku
