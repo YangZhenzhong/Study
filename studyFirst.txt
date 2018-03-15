@@ -1,4 +1,4 @@
-学习git的第一个文件
+﻿学习git的第一个文件
 $ git add file1.txt
 $ git add file2.txt
 $ git commit -m "add 3 files."
@@ -16,3 +16,8 @@ git diff HEAD -- studyFirst.txt
 用于查看当前版本库和工作区的不同
 cat 文件.txt
 此处用于对比版本ku
+
+git checkout -- studyFirst.txt  返回的结果是上一次提交到的暂存区的内容
+一种是readme.txt自修改后还没有被放到暂存区，现在，撤销修改就回到和版本库一模一样的状态；
+
+一种是readme.txt已经添加到暂存区后，又作了修改，现在，撤销修改就回到添加到暂存区后的状态。
