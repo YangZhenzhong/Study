@@ -21,3 +21,31 @@ git checkout -- studyFirst.txt  返回的结果是上一次提交到的暂存区
 一种是readme.txt自修改后还没有被放到暂存区，现在，撤销修改就回到和版本库一模一样的状态；
 
 一种是readme.txt已经添加到暂存区后，又作了修改，现在，撤销修改就回到添加到暂存区后的状态。
+删除文件
+
+
+在Git中，删除也是一个修改操作
+现在你有两个选择，一是确实要从版本库中删除该文件，那就用命令git rm删掉，并且git commit：
+
+git rm testDelete.txt 此把删除此文件的动作提交到暂存区
+然后在 git commit -m"我现在把版本库里的testDelte也删除了"
+
+但是我现在后悔了
+
+git reset --hard HEAD^ 回退到上一个版本
+
+然后会提示Untege 多了个什么。
+但是现在去电脑上看还没有此文件。
+
+只是版本库有。
+
+现在需要git checkout  -- testDelete.txt 把此文件恢复到本地
+
+如果删除了文件并没有git add testDelete.txt 
+那么直接 git checkout  -- test.txt
+
+ git remote add origin git@github.com:michaelliao/learngit.git
+git push -u origin master
+
+ git clone git@github.com:michaelliao/gitskills.git
+
